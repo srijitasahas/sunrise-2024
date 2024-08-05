@@ -1,0 +1,53 @@
+.taskBoard {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .columnsContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .taskColumn {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .taskCard {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    color: black;
+  }
+  
+  .doneButton, .doneButtonBlue {
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .doneButton {
+    background-color: #11161e;
+    color: #ffffff;
+  }
+  
+  .doneButtonBlue {
+    background-color: #eff4fa;
+    color: white;
+  }
+  
+  .taskCount {
+    background-color: #e2e4e9;
+    border-radius: 40%;
+    padding: 4px 8px;
+    font-size: 0.8em;
+    margin-left: 5px;
+  }
