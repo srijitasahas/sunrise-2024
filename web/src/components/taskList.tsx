@@ -46,9 +46,7 @@ const TaskList: React.FC = () => {
                 return res.json();
             })
             .then(() => {
-                setTasks((prevTasks) =>
-                    prevTasks.map((task) =>
-                        task.id === taskId ? { ...task, completed: true } : task
+                setTasks((prevTasks) => prevTasks.map((task) => task.id === taskId ? { ...task, completed: true } : task
                     )
                 );
                 updateCurrentGroup(tasks);
