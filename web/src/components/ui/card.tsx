@@ -34,13 +34,16 @@ const CardTitle = React.forwardRef<
   React.HTMLAttributes<HTMLHeadingElement>
 >(({ className, ...props }, ref) => (
   <h3
-    ref={ref}
-    className={cn(
-      "text-2xl font-semibold leading-none tracking-tight",
-      className
-    )}
-    {...props}
-  />
+  ref={ref}
+  className={cn(
+    "text-2xl font-semibold leading-none tracking-tight",
+    className
+  )}
+  aria-label="Your descriptive heading text"
+  {...props}
+>
+  {props.children}
+</h3>
 ))
 CardTitle.displayName = "CardTitle"
 
